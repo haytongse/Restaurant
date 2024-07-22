@@ -44,15 +44,15 @@ export const drawerMenu = [
              },
         ]
     },
-    // {
-    //     title: "Projects",
-    //     bg: Colors.menu3,
-    //     type: Icons.Octicons, icon: 'project',
-    //     route: 'Project',
-    //     menuList: [
-    //         { title: 'Portfolio' },
-    //         { title: 'Note-APP' },
-    //         { title: 'RN-Ui' },
-    //     ]
-    // },
+    {
+        title: "Maintainance",
+        bg: Colors.menu3,
+        type: Icons.Octicons, icon: 'project',
+        route: 'Maintainance',
+        menuList: [
+            { title: 'Categories' },
+            { title: 'Grades' },
+            { title: 'Products' },
+        ]
+    },
 ]
