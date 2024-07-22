@@ -40,7 +40,7 @@ const DrawerNav = () => {
 export default DrawerNav;
 const Styles = StyleSheet.create({
     drawerStyle: {
-        width: '40%'
+        width: '70%'
     },
     drawerItemStyle: { 
         borderRadius: constant.borderRadius
