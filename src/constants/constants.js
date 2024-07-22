@@ -14,19 +14,33 @@ export const ScreensArray = [
     { route: 'Profile', label: 'ProfileScreen', type: Icons.AntDesign, icon: "user", component: ProfileScreen, },
 ];
 export const drawerMenu = [
+    // {
+    //     title: "Settings",
+    //     bg: Colors.menu1,
+    //     type: Icons.Feather, icon: 'settings',
+    //     route: 'Settings',
+    //     menuList: [
+    //         {
+    //             route: 'Users',
+    //             title: 'Create User'
+    //         },
+    //         { 
+    //             title: 'Notify Me'
+    //          },
+    //     ]
+    // },
+    
     {
-        title: "Settings",
-        bg: Colors.menu1,
-        type: Icons.Feather, icon: 'settings',
-        route: 'Settings',
+        title: "Maintainance",
+        bg: Colors.menu3,
+        type: Icons.Octicons, icon: 'list-unordered',
+        route: 'Maintainance',
         menuList: [
-            {
-                route: 'Users',
-                title: 'Create User'
-            },
             { 
-                title: 'Notify Me'
+                title: 'Categories',
              },
+            { title: 'Grades' },
+            { title: 'Products' },
         ]
     },
     {
@@ -42,17 +56,6 @@ export const drawerMenu = [
                 icon: "user",
                 component: ProfileScreen
              },
-        ]
-    },
-    {
-        title: "Maintainance",
-        bg: Colors.menu3,
-        type: Icons.Octicons, icon: 'project',
-        route: 'Maintainance',
-        menuList: [
-            { title: 'Categories' },
-            { title: 'Grades' },
-            { title: 'Products' },
         ]
     },
 ]
