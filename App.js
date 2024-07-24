@@ -3,13 +3,12 @@ import { View, Text } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "./src/screens/home/HomeScreen";
 import ProfileScreen from "./src/screens/profile/ProfileScree";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import Animated, { runOnUI } from 'react-native-reanimated';
 import DrawerNav from "./src/navigation/DrawerNav";
-
+import HomeScreen from "./src/screens/home/HomeScreen";
 const App = () => {
   // const Tab = createBottomTabNavigator();
   // const Stack = createStackNavigator();

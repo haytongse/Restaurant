@@ -38,8 +38,8 @@ const CustomDrawer = (props: Props) => {
                 </View>
             </TouchableNativeFeedback>
             {/* DrawerList */}
-            <DrawerItemList {...props} />
-            <View style={styles.spacer} />
+            {/* <DrawerItemList {...props} />
+            <View style={styles.spacer} /> */}
             {drawerMenu.map((item, index) => {
                 return (
                     <TouchableOpacity activeOpacity={0.8} key={index}
@@ -64,22 +64,18 @@ const CustomDrawer = (props: Props) => {
                                     <SimpleLineIcons name={"arrow-right"} size={18} />
                                 </View>
                             }
-
-
                         </Row>
                         {menuIndex === index &&
                             <View style={{ backgroundColor: item.bg, borderRadius: constant.borderRadius }}>
                                 {item.menuList.map((subMenu, index) => (
                                     <TouchableNativeFeedback key={index}>
                                         <View style={styles.subMenu}>
-                                            <TouchableNativeFeedback onPress={() => { navigation.navigate(subMenu.route) }}>
-                                                <View style={{flexDirection: "row", marginLeft: 5,padding: 3}}>
-                                                    <Icon type={subMenu.type} name={subMenu.icon} size={16} style={{marginRight: 5}}/>
+                                            <TouchableNativeFeedback onPress={() => { navigation.navigate(subMenu.route), console.log(subMenu.route) }}>
+                                                <View style={{ flexDirection: "row", marginLeft: 5, padding: 3 }}>
+                                                    <Icon type={subMenu.type} name={subMenu.icon} size={16} style={{ marginRight: 5 }} />
                                                     <Text>{subMenu.title}</Text>
                                                 </View>
-
                                             </TouchableNativeFeedback>
-
                                         </View>
                                     </TouchableNativeFeedback>
                                 ))}
